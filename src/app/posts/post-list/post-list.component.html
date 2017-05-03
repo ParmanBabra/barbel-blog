@@ -1,0 +1,11 @@
+<h2 class="text-sx-center">
+    All Post
+    <button class="btn btn-sm btn-primary" (click)="onClick()">Create</button>
+</h2>
+<hr />
+<div class="card-column">
+    <div *ngFor="let post of posts" class="card">
+        <app-post [post]="post"></app-post>
+    </div>
+
+</div>
